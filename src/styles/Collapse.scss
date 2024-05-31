@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway&display=swap');
+
+.collapse-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .collapse-button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 15px;
+  }
+  
+  .collapse-content {
+    overflow: hidden;
+    font-size: large;
+    transition: max-height 0.3s ease-out;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+     p {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.collapse-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}

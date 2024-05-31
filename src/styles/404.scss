@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway&display=swap');
+
+.not-found {
+    text-align: center;
+    font-family: Montserrat;
+    color: #ff6060;
+
+    h1 {
+        font-size: 1000%;
+        margin: 0;
+        padding-bottom:2.5% ;
+    }
+
+    h2 {
+        padding-bottom: 2.5%;
+    }
+    
+    a {
+        text-decoration:underline ;
+        color: black;
+    }
+}

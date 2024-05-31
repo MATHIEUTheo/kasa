@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 15px;
+    size: 24px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
