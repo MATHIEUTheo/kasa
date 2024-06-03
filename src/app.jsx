@@ -14,7 +14,7 @@ function App() {
 	
 	return (
 		<Router>
-				<Header />
+			<Header />
 			<div className="container">
 				<Routes>
 					<Route path="/" element={<Home />} />
@@ -22,8 +22,8 @@ function App() {
 					<Route path="/appartement" element={<Logement />} />
 					<Route path="*" element={<Erreur />} />
 				</Routes>
-				<Footer />
 			</div>
+			<Footer />
 		</Router>
 		);
 	}

@@ -4,13 +4,18 @@
     padding: 0;
 }
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 .container {
-    position: relative;
-    height: calc(100vh - 200px);
+    flex: 1 0 auto;
 }
 html, body {
     width: 100%;
     margin: 0;
   }
+
+#root{
+    display: contents;
+}
