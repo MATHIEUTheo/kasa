@@ -37,7 +37,7 @@ const Collapse = () => {
             <div key={index} className="collapse-container">
               <button className="collapse-button" onClick={() => toggleCollapse(index)}>
                 {titles[index]}
-                <span className={`icon ${index ? "rotated" : "90"}`}>
+                <span className={`icon ${openIndexes[index] ? 'rotate' : ''}`}>
                   <FontAwesomeIcon icon={faChevronUp} />
                 </span>
               </button>

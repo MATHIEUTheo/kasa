@@ -38,6 +38,14 @@
   }
 }
 
+.icon {
+  transition: transform 0.3s ease-out;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
 .collapse-wrapper {
   display: flex;
   flex-direction: column;
