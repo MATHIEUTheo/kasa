@@ -4,12 +4,12 @@
     padding: 0;
 }
 body {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     min-height: 100vh;
 }
 .container {
-    flex: 1 0 auto;
+    min-height: calc(100vh - 400px);
 }
 html, body {
     width: 100%;
@@ -17,5 +17,5 @@ html, body {
   }
 
 #root{
-    display: contents;
+    min-height: 100vh;
 }
