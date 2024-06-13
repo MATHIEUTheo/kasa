@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
-import '../styles/Collapse.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useRef } from 'react'
+import '../styles/Collapse.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 
 const Collapse = () => {
-    const [openIndexes, setOpenIndexes] = useState([false, false, false, false]);
-    const contentRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+    const [openIndexes, setOpenIndexes] = useState([false, false, false, false])
+    const contentRefs = [useRef(null), useRef(null), useRef(null), useRef(null)]
   
     const titles = [
       'Fiabilité',
@@ -24,9 +24,9 @@ const Collapse = () => {
   
     const toggleCollapse = (index) => {
       setOpenIndexes((prevOpenIndexes) => {
-        const newOpenIndexes = [...prevOpenIndexes];
-        newOpenIndexes[index] = !newOpenIndexes[index];
-        return newOpenIndexes;
+        const newOpenIndexes = [...prevOpenIndexes]
+        newOpenIndexes[index] = !newOpenIndexes[index]
+        return newOpenIndexes
       });
     };
   

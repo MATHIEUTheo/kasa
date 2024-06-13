@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 import Header from "./components/header.jsx";
 import Home from "./pages/home.jsx";

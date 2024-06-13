@@ -1,0 +1,35 @@
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    margin: 2%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    padding: 2% 0;
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    padding: 2% 0;
+    p{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        bottom: 3%;
+        color: white;
+        font-family: Montserrat;
+        width: 340px;
+        padding-left: 2%;
+        background: linear-gradient(white, black,);
+    }
+    img {
+        height: 340px;
+        width: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+}}
