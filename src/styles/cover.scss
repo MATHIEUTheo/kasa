@@ -16,20 +16,34 @@
     position: relative;
     margin: auto;
     padding: 2% 0;
+
     p{
         display: flex;
         position: absolute;
         z-index: 1;
-        bottom: 3%;
+        bottom: 10px;
         color: white;
         font-family: Montserrat;
         width: 340px;
         padding-left: 2%;
-        background: linear-gradient(white, black,);
+        
     }
     img {
         height: 340px;
         width: 340px;
         border-radius: 10px;
         object-fit: cover;
+        cursor: pointer;
 }}
+.card ::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 0px 0 10px 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.411) 0%, rgba(0, 0, 0, 0.205) 100%);
+    z-index: 2;
+}
