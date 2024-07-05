@@ -12,7 +12,7 @@ function Cover() {
   return (
     <div className="card_container">
       {Json.map(item => (
-        <div className="card">
+        <div key={item.id} className="card">
           <img 
             src={item.cover} 
             alt={item.title} 
