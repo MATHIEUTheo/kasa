@@ -86,8 +86,12 @@ h2{
     }
 }
 
-.collapse-container{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 50%;
+.buttons-container{
+    .collapse-wrapper{
+        flex-direction: row;
+        padding: 20px 0;
+    }
+    .collapse-container{
+        width: 45%;
+    }
 }

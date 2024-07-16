@@ -7,7 +7,7 @@ function Cover() {
 
   const handleClick = (id) => {
     navigate(`/logement?id=${id}`)
-  };
+  }
 
   return (
     <div className="card_container">
@@ -22,10 +22,10 @@ function Cover() {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default Cover;
+export default Cover
 
 
 

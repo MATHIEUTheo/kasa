@@ -13,8 +13,8 @@ const Collapse = ({informations}) => {
         const newOpenIndexes = [...prevOpenIndexes]
         newOpenIndexes[index] = !newOpenIndexes[index]
         return newOpenIndexes
-      });
-   };
+      })
+   }
    
     return (
       <div>
@@ -39,7 +39,7 @@ const Collapse = ({informations}) => {
           ))}
         </div>
       </div>
-    );
-  };
+    )
+  }
   
-  export default Collapse;
+  export default Collapse

@@ -3,7 +3,7 @@ import emptystar from '../assets/emptystar.svg'
 
 function Rating({ rating }) {
 	const score = parseInt(rating)
-	const stars = [1, 2, 3, 4, 5];
+	const stars = [1, 2, 3, 4, 5]
 	return (
 		<div className="rate-comp">
 			{stars.map((level) =>
@@ -24,7 +24,7 @@ function Rating({ rating }) {
 				)
 			)}
 		</div>
-	);
+	)
 }
 
 
