@@ -7,7 +7,7 @@
 .card_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 50px;
     align-items: center;
     margin: 2%;
     width: 90%;
@@ -15,7 +15,7 @@
     margin-right: 5%;
     border-radius: 25px;
     background-color: #F6F6F6;
-    padding: 2% 0;
+    padding: 2% 2%;
 }
 
 .card {
@@ -35,8 +35,10 @@
         
     }
     img {
-        height: 340px;
-        width: 340px;
+        height: 100%;
+        width: 100%;
+        min-height: 375px;
+        min-width: 375px;
         border-radius: 10px;
         object-fit: cover;
         cursor: pointer;

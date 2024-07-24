@@ -21,19 +21,21 @@ const Collapse = ({informations}) => {
         <div className="collapse-wrapper">
           {informations.map((item, index) => (
             <div key={index} className="collapse-container">
-              <button className="collapse-button" onClick={() => toggleCollapse(index)}>
-                {item.title}
-                <span className={`icon ${openIndexes[index] ? 'rotate' : ''}`}>
-                  <FontAwesomeIcon icon={faChevronUp} />
-                </span>
-              </button>
-              <div
-                className="collapse-content"
-                style={{
-                  maxHeight: openIndexes[index] ? `${contentRefs.current[index].current.scrollHeight}px` : '0px',
-                }}
-                ref={contentRefs.current[index]}>
-                <p>{item.content}</p>
+              <div className={`${item.title}`}>
+                <button className="collapse-button" onClick={() => toggleCollapse(index)}>
+                  {item.title}
+                  <span className={`icon ${openIndexes[index] ? 'rotate' : ''}`}>
+                    <FontAwesomeIcon icon={faChevronUp} />
+                  </span>
+                </button>
+                <div
+                  className="collapse-content"
+                  style={{
+                    maxHeight: openIndexes[index] ? `${contentRefs.current[index].current.scrollHeight}px` : '0px',
+                  }}
+                  ref={contentRefs.current[index]}>
+                  <p>{item.content}</p>
+                </div>
               </div>
             </div>
           ))}

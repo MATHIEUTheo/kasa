@@ -1,56 +1,28 @@
-import { useNavigate } from 'react-router-dom'
-import { useState } from "react"
+import { useParams } from 'react-router-dom'
 import Json from "../data/logements.json"
 import "../styles/logement.scss"
 import Rating from '../components/rating'
-import FlecheA from '../assets/flecheA.svg'
-import FlecheB from '../assets/flecheB.svg'
 import Collapse from '../components/collapse'
+import Carousel from '../components/carousel'
 
 function Logement() {
-  const url = window.location.search
-  const urlParams = new URLSearchParams(url)
-  const id = urlParams.get("id")
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const filteredItems = Json.filter(item => item.id === id);
+  const { id } = useParams()
+  const filteredItems = Json.filter(item => item.id === id)
 
-if (filteredItems.length === 0) {
-  window.location.href = '/erreur';
-}
-
-  const next = () => {
-    setCurrentIndex(prevIndex => {
-      if (prevIndex >= Json.find(item => item.id === id).pictures.length - 1) {
-        return prevIndex = 0
-      }
-      prevIndex = prevIndex + 1
-      return prevIndex
-    })
+  if (filteredItems.length === 0) {
+    window.location.href = '/erreur'
   }
-
-  const previous = () => {
-    setCurrentIndex(prevIndex => {
-      if (prevIndex <= 0) {
-        return prevIndex = Json.find(item => item.id === id).pictures.length - 1
-      }
-      prevIndex = prevIndex - 1
-      return prevIndex
-    })
-  }
-  // const numImage=currentIndex+1
-  // const nbImage=Json.find(item => item.id === id).pictures.length
-  // const pictureNumber=numImage+"/"+nbImage
 
   return (
     <div className="logement_container">
-      {Json.filter(item => item.id === id).map(item => {
+      {filteredItems.map(item => {
         const infos = [
           {
             title: "Description",
             content: item.description
           },
           {
-            title: "équipements",
+            title: "Équipements",
             content: item.equipments?.map((equipment, index) => (
               <div key={index}>{equipment}</div>
             ))
@@ -59,15 +31,7 @@ if (filteredItems.length === 0) {
 
         return (
           <div key={item.id} className='host-container'>
-            <div className="container-pictures">
-              <img className='pictures'
-                src={item.pictures[currentIndex]}
-                alt={item.title}
-              />
-              {/* <p>{pictureNumber}</p> */}
-              <span onClick={previous} className='left'> <img src={FlecheA} alt="précédent" /> </span>
-              <span onClick={next} className="right"> <img src={FlecheB} alt="Suivant" /> </span>
-            </div>
+            <Carousel pictures={item.pictures} title={item.title} />
 
             <div className='titre'>
               <h1>{item.title}</h1>

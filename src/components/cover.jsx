@@ -2,12 +2,11 @@ import { useNavigate } from 'react-router-dom'
 import Json from "../data/logements.json"
 import "../styles/cover.scss"
 
-function Cover() {
-  const navigate = useNavigate()
-
-  const handleClick = (id) => {
-    navigate(`/logement?id=${id}`)
-  }
+function Cover () {
+   const navigate = useNavigate()
+      const handleClick = (id) => {
+      navigate(`/logement/${id}`)
+    }
 
   return (
     <div className="card_container">

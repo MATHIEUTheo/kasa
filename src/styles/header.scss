@@ -10,8 +10,12 @@ header {
 
 a {
     text-decoration: none;
+    color: black;
     margin-left: 15px;
     size: 24px;
     font-weight: 500;
     font-family: Montserrat;
+        &.active {
+            text-decoration: underline;
+        }
 }
