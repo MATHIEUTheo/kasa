@@ -6,7 +6,7 @@ function Header () {
     const location = useLocation()
     return (
         <header>
-            <div>
+            <div className="divLogo">
                 <img className="Logo" src={Logo} alt="Nom du site" />
             </div>
             <nav>

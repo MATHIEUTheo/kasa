@@ -6,6 +6,9 @@ header {
     align-items: center;
     margin: 0 5%;
     height: 200px;
+    img{
+        width: 100%;
+    }
 }
 
 a {
@@ -18,4 +21,16 @@ a {
         &.active {
             text-decoration: underline;
         }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        .divLogo{
+            flex: 1;
+        }
+        img{
+            width: 60%;
+        }
+        height: 100px;
+    }
 }

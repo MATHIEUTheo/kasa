@@ -37,13 +37,15 @@ function Logement() {
               <h1>{item.title}</h1>
               <h2>{item.location}</h2>
 
-              {item.tags &&
-                item.tags.length > 0 &&
-                item.tags.map((tag, index) => (
-                  <span key={index} className="tag-span">
-                    {tag}
-                  </span>
-                ))}
+              <div className='tag-div'>
+                {item.tags &&
+                  item.tags.length > 0 &&
+                  item.tags.map((tag, index) => (
+                    <span key={index} className="tag-span">
+                      {tag}
+                    </span>
+                  ))}
+              </div>
             </div>
             <div className='host-profil'>
               <div className='host'>

@@ -15,6 +15,7 @@
         margin-left: 5%;
         margin-right: 5%;
         border-radius: 25px;
+        font-family: Montserrat;
     }
 
     img {
@@ -28,4 +29,18 @@
         display: block;
         margin-bottom: 10px;
     }    
+}
+@media screen and (max-width: 500px) {
+    .banner{
+        height: 50%;
+        .text-banner{
+            font-size: 24px;
+            max-height: 150px;
+            border-radius: 10px;
+        }
+        img{
+            max-height: 150px;
+            border-radius: 10px;
+        }
+    }
 }

@@ -76,3 +76,42 @@ h2{
 .Description{
     margin-right: 5%;
 }
+
+@media screen and (max-width: 500px) {
+    .titre{
+        width: 100%;
+    }
+    .Équipements{
+        margin-left: 0;
+    }
+    .Description{
+        margin-right: 0;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 14px;
+        margin: 5% 0;
+    }
+    .tag-div{
+        display: flex;
+    }
+    .tag-span{
+        font-size: 10px;
+    }
+    .host-profil{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    }
+    .host-container{
+        .host{
+            margin-bottom: 0;
+        }
+    }
+
+}
