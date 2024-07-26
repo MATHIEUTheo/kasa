@@ -9,9 +9,7 @@ function Logement() {
   const { id } = useParams()
   const filteredItems = Json.filter(item => item.id === id)
 
-  if (filteredItems.length === 0) {
-    window.location.href = '/erreur'
-  }
+  if (!filteredItems.length) window.location.href = '/erreur'
 
   return (
     <div className="logement_container">

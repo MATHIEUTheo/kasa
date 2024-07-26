@@ -12,11 +12,13 @@ function Cover () {
     <div className="card_container">
       {Json.map(item => (
         <div key={item.id} className="card">
-          <img 
-            src={item.cover} 
-            alt={item.title} 
-            onClick={() => handleClick(item.id)} 
-          />
+          <div className='container_img'>
+            <img
+              src={item.cover} 
+              alt={item.title} 
+              onClick={() => handleClick(item.id)} 
+            />
+          </div>
           <p>{item.title}</p>
         </div>
       ))}
